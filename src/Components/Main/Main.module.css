@@ -1,0 +1,90 @@
+.main_image {
+    width: 100%;
+    height: calc(100vh - 60px - 140px);
+    object-fit: cover;
+}
+
+.detail {
+    width: 100%;
+    height: 61px;
+    background: #F1EADC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail_text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--caption-text);
+    line-height: 114%;
+    color: #2C2A2A;
+    margin-right: 11px;
+}
+
+.subtitle span {
+    font-family: "New York Large";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+}
+
+.subtitle svg {
+    margin: 0 7px;
+}
+
+.main_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 49px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.heading_1 {
+    font-family: "New York Extra Large";
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--mobile-h1);
+    line-height: 105%;
+    text-align: center;
+    color: #000000;
+    margin: 11px 0 20px;
+}
+
+.main_paragraph {
+    font-family: "New York Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--featured-paragraph);
+    line-height: 140%;
+    text-align: center;
+    color: #6A6161;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.carousel_grp {
+    margin-bottom: 64px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carousel {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #C4C4C4;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+}

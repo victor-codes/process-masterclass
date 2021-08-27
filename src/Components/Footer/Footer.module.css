@@ -1,0 +1,70 @@
+.footer {
+    padding: 60px 0 56px 34px;
+    background: #FFF6F4;
+}
+
+.heading_6 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--heading-6);
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin: 0 0 10px 0;
+}
+
+.footer_link {
+    font-family: "New York Small";
+    font-style: normal;
+    width: fit-content;
+    font-weight: normal;
+    display: grid;
+    gap: 16px;
+    color: #6A6161;
+}
+
+.footer_link span {
+    display: block;
+    width: fit-content;
+    font-size: 1.6rem;
+}
+
+.footer_link_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 70px;
+    margin: 56px 0 0 0;
+    padding-right: 51px;
+    width: fit-content;
+
+}
+
+.address_container {
+    display: grid;
+    gap: 36px;
+    margin-top: 92px;
+}
+
+address {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 14px;
+    letter-spacing: 0.25em;
+    color: var(--black);
+}
+
+
+address span {
+    display: block;
+    font-family: "New York"Small;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--paragraph);
+    line-height: 24px;
+    color: var(--grey-text);
+    margin-top: 5px;
+}
