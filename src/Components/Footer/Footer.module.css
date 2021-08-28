@@ -4,7 +4,8 @@
 }
 
 .heading_6 {
-    font-family: "Lato";
+    font-family: "Lato",
+        sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: var(--heading-6);
@@ -16,7 +17,8 @@
 }
 
 .footer_link {
-    font-family: "New York Small";
+    font-family: "New York Small",
+        sans-serif;
     font-style: normal;
     width: fit-content;
     font-weight: normal;
@@ -44,11 +46,13 @@
 .address_container {
     display: grid;
     gap: 36px;
-    margin-top: 92px;
+    margin: 92px 0 0;
+    padding-bottom: 75px;
 }
 
 address {
-    font-family: "Lato";
+    font-family: "Lato",
+        sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.2rem;
@@ -57,10 +61,23 @@ address {
     color: var(--black);
 }
 
+.copyright_text {
+    font-family: "New York Small", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--paragraph);
+    line-height: 24px;
+    margin-top: 33px;
+    color: #6A6161;
+    width: 100%;
+    max-width: 295px;   
+}
+
 
 address span {
     display: block;
-    font-family: "New York"Small;
+    font-family: "New York Small",
+        sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: var(--paragraph);

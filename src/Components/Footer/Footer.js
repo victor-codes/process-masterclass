@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SocialMedia } from "../../assets/icon/SocialMedia";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -49,10 +50,10 @@ export default function Footer() {
       </section>
       <div className={styles.footer}>
         <div>
-          <img src="" alt="" />
+          <img src="/resources/footer-image.png" alt="" />
         </div>
 
-        <h1>
+        <h1 style={{ marginTop: "30px" }}>
           <svg
             width="87"
             height="33"
@@ -122,15 +123,21 @@ export default function Footer() {
             </p>
           </div>
         </div>
-      <div className={styles.address_container}>
-        <address>
-          MANHATTAN STORE
-          <span>526 Avenue Of The Americas New York NY</span>
-        </address>
-        <address>
-          BROOKLYN STORE <span>118 Knickerbocker Ave East Williamsburg</span>
-        </address>
-      </div>
+        <div className={styles.address_container}>
+          <address>
+            MANHATTAN STORE
+            <span>526 Avenue Of The Americas New York NY</span>
+          </address>
+          <address>
+            BROOKLYN STORE <span>118 Knickerbocker Ave East Williamsburg</span>
+          </address>
+        </div>
+        <div className="line_border"></div>
+        <SocialMedia />
+        <p className={styles.copyright_text}>
+          © 2020 Vespi. All rights reserved. This is a Process Masterclass
+          lesson.{" "}
+        </p>
       </div>
     </footer>
   );

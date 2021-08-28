@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/new-york-extra-large?styles=70617,70615,70611,70629,70641,70653,70627,70639,70651,70623,70635,70647,70621,70633,70645');
+
 :root {
   /* font-size */
   --heading-1: 9.6rem;
@@ -61,7 +64,7 @@
 }
 
 .heading_4 {
-  font-family: "New York Medium";
+  font-family: "New York Medium", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: var(--mobile-h4);
@@ -105,7 +108,8 @@
 }
 
 .heading_3 {
-  font-family: "New York Medium";
+  font-family: "New York Medium",
+    sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2.6rem;
@@ -171,7 +175,8 @@
 }
 
 .alternate_heading_6 {
-  font-family: "New York Small";
+  font-family: "New York Small",
+    sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: var(--heading-6-alternate);
@@ -183,7 +188,8 @@
 }
 
 .email_text {
-  font-family: "New York Small";
+  font-family: "New York Small",
+    sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: var(--micro-caption-text);
@@ -212,4 +218,27 @@ input {
 
 input::placeholder {
   color: var(--black);
+}
+
+.column_gap {
+  margin-top: 56px;
+  margin-left: 4px;
+}
+
+.line_border {
+  position: relative;
+  border-bottom: 1px solid var(--light-grey-soft-lines);
+  left: -34px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .latest {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+
 }

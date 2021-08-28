@@ -4,8 +4,8 @@ import styles from "./Main.module.css";
 
 export default function Main() {
   return (
-    <main>
-      <div>
+    <main className={styles.main}>
+      <div className={styles.img_container}>
         <div>
           <img
             className={styles.main_image}
@@ -54,7 +54,9 @@ export default function Main() {
           </span>
           <span>TAKAGAWA</span>
         </div>
-        <h2 className={styles.heading_1}>Elegance & Comfort</h2>
+        <h2 className={styles.heading_1}>
+          Elegance <br /> &amp; Comfort
+        </h2>
         <p className={styles.main_paragraph}>
           Our new range of overcoats made from 100% cashmere, ethically sourced
           and without the price tag of old fashion houses.{" "}

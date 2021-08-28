@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <h3 className="section_header">Latest happenings</h3>
+      <h3 className="section_header latest">Latest happenings</h3>
       <section className="grid line">
         <NewsCard
           title="New silhouettes for a new decade"

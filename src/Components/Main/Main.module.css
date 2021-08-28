@@ -1,6 +1,6 @@
 .main_image {
     width: 100%;
-    height: calc(100vh - 60px - 140px);
+    height: calc(100vh - 60px - 189px);
     object-fit: cover;
 }
 
@@ -14,7 +14,8 @@
 }
 
 .detail_text {
-    font-family: "Lato";
+    font-family: "Lato",
+        sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: var(--caption-text);
@@ -24,13 +25,14 @@
 }
 
 .subtitle span {
-    font-family: "New York Large";
+    font-family: "New York Large",
+        sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.3rem;
     line-height: 100%;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: var(--black);
 
 }
 
@@ -49,18 +51,22 @@
 }
 
 .heading_1 {
-    font-family: "New York Extra Large";
+    font-family: "New York Extra Large",
+        sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: var(--mobile-h1);
     line-height: 105%;
     text-align: center;
-    color: #000000;
+    width: 100%;
+    max-width: 317px;
+    color: var(--black);
     margin: 11px 0 20px;
 }
 
 .main_paragraph {
-    font-family: "New York Medium";
+    font-family: "New York Medium",
+        sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: var(--featured-paragraph);
@@ -87,4 +93,36 @@
     border: none;
     padding: 0;
     border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 35px;
+
+    }
+
+    .main_text {
+        width: -webkit-fill-available;
+        border-bottom: none;
+    }
+
+    .img_container {
+        width: 48.3%;
+    }
+
+    .main_image {
+        height: 540px;
+        width: unset;
+    }
+
+    .carousel_grp {
+        display: none;
+    }
+
+    .detail {
+        background: none;
+        justify-content: flex-start;
+    }
 }
