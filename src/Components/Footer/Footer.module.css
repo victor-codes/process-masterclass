@@ -3,6 +3,37 @@
     background: #FFF6F4;
 }
 
+.alternate_heading_6 {
+    font-family: "New York Small",
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--heading-6-alternate);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+
+}
+
+.email_text {
+    font-family: "New York Small",
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--micro-caption-text);
+    line-height: 146%;
+    color: #6A6161;
+    width: 100%;
+    max-width: 292px;
+
+}
+
+.email_subscribition {
+    padding: 48px 0 0 32px;
+    margin-bottom: 36px;
+}
+
 .heading_6 {
     font-family: "Lato",
         sans-serif;
@@ -50,7 +81,7 @@
     padding-bottom: 75px;
 }
 
-address {
+.address {
     font-family: "Lato",
         sans-serif;
     font-style: normal;
@@ -70,7 +101,7 @@ address {
     margin-top: 33px;
     color: #6A6161;
     width: 100%;
-    max-width: 295px;   
+    max-width: 295px;
 }
 
 
@@ -84,4 +115,42 @@ address span {
     line-height: 24px;
     color: var(--grey-text);
     margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .email_text {
+        max-width: 460px;
+        margin-bottom: 24px;
+    }
+
+    .footer_link_container {
+        grid-template-columns: repeat(4, auto);
+        width: -webkit-fill-available;
+        padding-right: 68px;
+    }
+
+    .address {
+        width: 100%;
+        max-width: 158px;
+    }
+
+    address span {
+        width: 258px;
+    }
+
+    address {
+        width: fit-content;
+    }
+
+    .address_container {
+        grid-template-columns: repeat(2, auto);
+        justify-content: start;
+        gap: 45px;
+        padding-bottom: 67px;
+    }
+
+    .copyright_text {
+        max-width: -webkit-fill-available;
+        margin: 28px 0 66px;
+    }
 }

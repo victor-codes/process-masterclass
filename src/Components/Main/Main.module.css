@@ -99,8 +99,6 @@
     .main {
         display: flex;
         flex-direction: row-reverse;
-        margin-bottom: 35px;
-
     }
 
     .main_text {
@@ -114,7 +112,7 @@
 
     .main_image {
         height: 540px;
-        width: unset;
+        width: -webkit-fill-available;
     }
 
     .carousel_grp {

@@ -2,13 +2,23 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import NewsCard from "./Components/NewsBlock/NewsCard";
 import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
+import Journal from "./pages/Journal Article/Journal";
 
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/journal">
+            <Journal />
+          </Route>
+        </Switch>
+      </Router>
       <Header />
       <Main />
       <h3 className="section_header latest">Latest happenings</h3>
@@ -37,13 +47,13 @@ function App() {
           img="/resources/image (3).jpg"
           tag="LOOK BOOK"
         />
-        <div>
-          <img src="/resources/image (4).jpg" alt="" />
+        <div className="mission_container">
+          <img className="image" src="/resources/image (4).jpg" alt="" />
           <h4 className="heading_4">
             “Our mission is to bring the best of New Yorks local designers to
             the rest of the world.
           </h4>
-          <div>
+          <div className="hide">
             <button className="more_btn">Learn more about us</button>
           </div>
         </div>

@@ -7,8 +7,8 @@ export default function Footer() {
 
   return (
     <footer>
-      <section className="email_subscribition">
-        <h6 className="alternate_heading_6">
+      <section className={styles.email_subscribition}>
+        <h6 className={styles.alternate_heading_6}>
           <svg
             style={{ marginRight: "12px" }}
             width="14"
@@ -28,7 +28,7 @@ export default function Footer() {
           </svg>
           We also make emails
         </h6>
-        <p className="email_text">
+        <p className={styles.email_text}>
           Recieve updates and offers you’ll actually be interested in.
           Unsubscriber any time.{" "}
         </p>
@@ -125,11 +125,12 @@ export default function Footer() {
         </div>
         <div className={styles.address_container}>
           <address>
-            MANHATTAN STORE
+            <span className={styles.address}>MANHATTAN STORE</span>
             <span>526 Avenue Of The Americas New York NY</span>
           </address>
           <address>
-            BROOKLYN STORE <span>118 Knickerbocker Ave East Williamsburg</span>
+            <span className={styles.address}>BROOKLYN STORE</span>
+            <span>118 Knickerbocker Ave East Williamsburg</span>
           </address>
         </div>
         <div className="line_border"></div>
